@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="conv.css">
+    <script type="text/javascript" src="eel.js"></script>
+    <title>File converter on Python</title>
+</head>
+<body>
+<div class="page">
+    <div class="conv_div">
+        <h1>Укажите (относительный) путь к файлу :</h1>
+        <input type="text" id="path"/>
+        <input type="file" id="get_from_file"/>
+        <h1>Или выберите с устройства:</h1>
+        <label for="get_from_file" class="select_label">Выбрать файл</label>
+        <h1>Выберите нужный вам формат:</h1>
+        <select id="selection">
+            <option selected>PDF</option>
+            <option>DOC</option>
+            <option>DOT</option>
+            <option>DOCX</option>
+            <option>RTF</option>
+            <option>HTML</option>
+            <option>MHTML</option>
+            <option>MOBI</option>
+            <option>TXT</option>
+            <option>MD</option>
+            <option>EPUB</option>
+
+        </select>
+        <h1>Нажмите на кнопку чтобы начать <br>⬇️⬇️⬇️</h1>
+        <button type="button" onclick="convert_js()" class="conv_butt">Конвертировать</button>
+        <p id="result" style="color: white;"></p>
+    </div>
+</div>
+<script type="text/javascript" src="conv.js"></script>
+</body>
+</html>
