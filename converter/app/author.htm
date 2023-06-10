@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/author.css">
+    <script type="text/javascript" src="eel.js"></script>
+    <title>File converter on Python</title>
+</head>
+<body>
+<div class="top-head">
+    <a href="main.htm"><img src="img/logo.png" alt="" width="60" height="50"/></a>
+    <a href="https://www.python.org/" target="_blank"><img alt="" src="img/python.png" width="200" height="60"/></a>
+    <div class="r-nav">
+        <div>
+            <input type="checkbox" id="login" style="display: none"/><a></a>
+            <label for="login" class="login-label">Вход</label>
+            <div class="modal">
+                <div class="modal-window">
+                    <input type="checkbox" id="modal-closer" style="display: none;"/>
+                    <label for="modal-closer" style="width: 50px; height: 50px; background-color: red; margin-left: 100%; margin-top: -20px;font-size: 40px; font-weight: bold; border-radius: 50%"><a href="author.htm">X</a></label>
+                    <form id="log-form" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                        <h1>Регистрируйтесь !</h1>
+                        <p>Ваше ФИО:</p>
+                        <input id="name" type="text" placeholder="Михаил Саакашвили" name="name" required/>
+                        <p>Ваш возраст:</p>
+                        <input id="age" type="number" value="18" name="age"/>
+                        <p>Ваша почта:</p>
+                        <input id="mail" type="email" placeholder="example@gmail.com" name="email"/>
+                        <p>Придумайте логин:</p>
+                        <input id="nick" type="text" placeholder="Zloyded314" name="nick"/>
+                        <p>Придумайте пароль:</p>
+                        <input id="password" type="password" placeholder="parol_parol" name="password" required/>
+                        <input type="submit" id="confirm" onclick="send()" style="display: none"/>
+                        <input type="button" id="delete" onclick="remove()" style="display: none"/>
+                        <label for="confirm" class="confirm_label">Подтвердить</label>
+                        <label for="delete" class="delete_label">Удалить данные</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <ul>
+            <li><a href="main_eng.htm">Language</a></li>
+        </ul>
+    </div>
+</div>
+<header>
+    <nav>
+        <input type="checkbox" id="burgerbox"/>
+        <label class="burger" for="burgerbox"><span></span></label>
+        <ul>
+            <li><a href="main.htm">Главная</a></li>
+            <li><a href="converter.htm">Конвертер</a></li>
+            <li><a href="credits.htm">Спасибо !</a></li>
+            <li><a href="author.htm">Автор</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="author">
+        <h1>Мое портфолио</h1>
+        <div class="author-main">
+            <div class="images">
+                <img alt="" src="img/portfolio.JPG" class="first">
+                <img alt="" src="img/portfolio2.JPG" class="last">
+            </div>
+            <p>
+                Привет 👋, Я Халимов Мухаммед, и это мое портфолио, здесь я расскажу коротко о себе и что я умею и знаю. Я родом из Таджикистана (чистокровный Перс 😉), свои школьные годы учился в этой стране,
+                до средних классов. В 2021 году мне попалась хорошая возможность обучиться в другой стране, а именно в Российской Федерации (коротко РФ) 🪆, сейчас я учусь в Удмуртской Республике(РФ), в городе Ижевск в
+                ИжГТУ (привет Механ !), средний по меркам Восточной Европы университет, но и не один из худших. В течении времени которого я пребывал в этой федерации я смог успешно научиться основам программирования и
+                языка Python, C++, JavaScript и Веб - разработки в том числе. Я знаю немало языков, свободно владею Таджикским(родной), Персидским(родной), Русским(носитель), Английским(B2+) и неплохо знаю Немецкий(B1+), Украинский(B1),
+                Сербохорватский(A2) и Боснийский(A2). Все что здесь описано это моя краткая биография. Благодарю всех кто прочитал, удачи вам и хорошего дня !
+            </p>
+        </div>
+    </div>
+</main>
+<footer>
+    <ul style="font-weight: bold; margin-top: 25px;">
+        <li><img src="img/logo.png" alt="" width="60" height="50"><p>Конвертер на Python</p></li>
+        <li style="margin-top: 10px;">© 2023 HALIMOV CORPORATION. ВСЕ ПРАВА ЗАЩИЩЕНЫ</li>
+        <li><img alt="" src="img/persia.png" width="20" height="20"><img alt="" src="img/sco.png" width="21" height="21"><p>Государство Таджикистан, ГРРП, г. Вахдат, Симиганджская община, Назирабад, дом 109</p></li>
+        <li><img alt="" src="img/russia.png" width="20" height="20"><img alt="" src="img/udmurtia.png" width="22" height="22"><p>РФ, Республика Удмуртия, г. Ижевск, ул. Кирова, дом 106</p></li>
+    </ul>
+    <ul style="font-weight: bold; margin-top: 10px;">
+        <li><p>Мои контакты: </p></li>
+        <li><img alt="" src="img/persia.png" width="18" height="18"><img alt="" src="img/sco.png" width="20" height="20"><p>+992 551 55 - 44 - 88 - Таджикистан</p></li>
+        <li><img alt="" src="img/romania.png" width="18" height="18"><img alt="" src="img/eu.png" width="20" height="20"><p>+40 729 732 - 346 - Румыния</p></li>
+        <li><img alt="" src="img/alemandia.png" width="18" height="18"><img alt="" src="img/eu.png" width="20" height="20"><p>+49 157 359 - 956 - 85 - Алемандия/Германия/ФРГ</p></li>
+        <li><img alt="" src="img/udmurtia.png" width="20" height="20"><img alt="" src="img/russia.png" width="18" height="18"><p>+7 939 875 - 00 - 27 - Удмуртия, РФ</p></li>
+    </ul>
+    <ul style="font-weight: bold; margin-top: 10px;">
+        <li><p>Мои соц. сети и почта:</p></li>
+        <li style="margin-bottom: 3px;"><img alt="" src="img/tg.png" width="20" height="20"><a href="https://t.me/Zimmermannov_V2" target="_blank">TELEGRAM</a></li>
+        <li style="margin-bottom: 3px;"><img alt="" src="img/vk.png" width="20" height="20"><a href="https://www.vk.com/princefrompersia" target="_blank">VKONTAKTE</a></li>
+        <li style="margin-bottom: 3px;"><img alt="" src="img/email.png" width="20" height="20">muhammadi.halimov@icloud.com</li>
+        <li style="margin-bottom: 3px;"><img alt="" src="img/email.png" width="20" height="20">bobojonhalimzoda05@gmail.com</li>
+        <li style="margin-bottom: 3px;"><img alt="" src="img/email.png" width="20" height="20">muhammadi.halimov110@gmail.com</li>
+    </ul>
+</footer>
+<script defer type="text/javascript" src="js/storage.js"></script>
+</body>
+</html>
